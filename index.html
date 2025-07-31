@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Solutions Repository</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #161b22;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            padding: 40px;
+        }
+        h1 {
+            color: #58a6ff;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 10px;
+        }
+        .badges {
+            margin: 20px 0;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-right: 10px;
+            font-size: 12px;
+        }
+        .badge.blue {
+            background: #0969da;
+        }
+        h2 {
+            color: #f0f6fc;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #7c3aed;
+        }
+        .category {
+            margin: 20px 0;
+            padding: 20px;
+            background: #0d1117;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 8px 0;
+            padding: 8px 12px;
+            background: #21262d;
+            border-radius: 4px;
+        }
+        li::before {
+            content: "▶ ";
+            color: #58a6ff;
+            font-weight: bold;
+        }
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+        .project-structure {
+            background: #0d1117;
+            padding: 16px;
+            border-radius: 6px;
+            font-family: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            border: 1px solid #30363d;
+        }
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .stats-table th,
+        .stats-table td {
+            border: 1px solid #30363d;
+            padding: 12px;
+            text-align: left;
+        }
+        .stats-table th {
+            background: #21262d;
+            color: #f0f6fc;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #21262d;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="emoji">🧮</span>Algorithm Solutions Repository</h1>
+        
+        <div class="badges">
+            <a href="https://efekrbs.github.io/algorithm/" class="badge">GitHub Pages - Live</a>
+            <a href="https://github.com/efekrbs/algorithm" class="badge blue">GitHub Repository</a>
+        </div>
+
+        <p>Bu repository, <strong>algoritma problemleri ve çözümleri</strong> için organize edilmiş kapsamlı bir koleksiyondur. HackerRank, LeetCode ve diğer platformlardan çözümler içerir.</p>
+
+        <h2><span class="emoji">🎯</span>Proje Hakkında</h2>
+        <p>Bu proje, çeşitli algoritma problemlerinin çözümlerini kategorize edilmiş şekilde sunmaktadır. Her kategori kendi klasöründe organize edilmiştir.</p>
+
+        <h2><span class="emoji">📚</span>Ana Kategoriler</h2>
+
+        <div class="category">
+            <h3><span class="emoji">🟢</span>LeetCode Solutions</h3>
+            <ul>
+                <li>Easy Problems</li>
+                <li>Medium Problems</li>
+                <li>Hard Problems</li>
+                <li>Array Problems</li>
+                <li>String Problems</li>
+                <li>Tree Problems</li>
+                <li>Graph Problems</li>
+                <li>Dynamic Programming</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3><span class="emoji">🔴</span>HackerRank Solutions</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+                <li>Mathematics</li>
+                <li>SQL</li>
+                <li>30 Days of Code</li>
+                <li>Interview Preparation Kit</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3><span class="emoji">📊</span>Data Structures</h3>
+            <ul>
+                <li>Arrays</li>
+                <li>Linked Lists</li>
+                <li>Stacks</li>
+                <li>Queues</li>
+                <li>Trees</li>
+                <li>Graphs</li>
+                <li>Hash Tables</li>
+                <li>Heaps</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3><span class="emoji">🔄</span>Sorting Algorithms</h3>
+            <ul>
+                <li>Bubble Sort</li>
+                <li>Selection Sort</li>
+                <li>Insertion Sort</li>
+                <li>Merge Sort</li>
+                <li>Quick Sort</li>
+                <li>Heap Sort</li>
+                <li>Radix Sort</li>
+                <li>Counting Sort</li>
+            </ul>
+        </div>
+
+        <h2><span class="emoji">📁</span>Proje Yapısı</h2>
+        <div class="project-structure">
+algorithm/<br>
+│<br>
+├── leetcode/              # LeetCode çözümleri<br>
+│   ├── easy/             # Kolay seviye<br>
+│   ├── medium/           # Orta seviye<br>
+│   ├── hard/             # Zor seviye<br>
+│   └── topics/           # Konulara göre<br>
+│<br>
+├── hackerrank/           # HackerRank çözümleri<br>
+│   ├── problem-solving/  # Problem çözme<br>
+│   ├── data-structures/  # Veri yapıları<br>
+│   ├── algorithms/       # Algoritmalar<br>
+│   └── interview-kit/    # Mülakat hazırlık<br>
+│<br>
+├── data-structures/      # Veri yapıları<br>
+│   ├── arrays/          # Diziler<br>
+│   ├── linked-lists/    # Bağlı listeler<br>
+│   ├── trees/           # Ağaçlar<br>
+│   ├── graphs/          # Graflar<br>
+│   └── hash-tables/     # Hash tabloları<br>
+│<br>
+├── sorting/             # Sıralama algoritmaları<br>
+│   ├── bubble-sort/     # Bubble sort<br>
+│   ├── merge-sort/      # Merge sort<br>
+│   ├── quick-sort/      # Quick sort<br>
+│   └── heap-sort/       # Heap sort<br>
+│<br>
+└── README.md           # Bu dosya
+        </div>
+
+        <h2><span class="emoji">📈</span>İstatistikler</h2>
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Easy</th>
+                    <th>Medium</th>
+                    <th>Hard</th>
+                    <th>Toplam</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>LeetCode</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>HackerRank</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr style="background: #21262d;">
+                    <td><strong>Toplam</strong></td>
+                    <td><strong>1</strong></td>
+                    <td><strong>0</strong></td>
+                    <td><strong>0</strong></td>
+                    <td><strong>1</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2><span class="emoji">🚀</span>Başlangıç</h2>
+        <p>Bu projeyi kullanmaya başlamak için:</p>
+        <ol>
+            <li><strong>Repository'yi clone yapın:</strong>
+                <div class="project-structure">git clone https://github.com/efekrbs/algorithm.git<br>cd algorithm</div>
+            </li>
+            <li><strong>İlgili kategoriye gidin</strong></li>
+            <li><strong>Problem çözümlerini inceleyin</strong></li>
+            <li><strong>Kendi çözümlerinizi ekleyin</strong></li>
+        </ol>
+
+        <div class="footer">
+            <p><strong>Made with ❤️ for algorithm practice and learning</strong></p>
+            <p><em>Last updated: August 1, 2025</em></p>
+        </div>
+    </div>
+</body>
+</html>
